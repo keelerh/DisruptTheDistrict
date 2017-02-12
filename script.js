@@ -5,15 +5,16 @@ jQuery(function ($) {
           "at your copy of the YUI compressor and run `cake package`.");
   } else {
     $('#content').annotator()
-                //  .annotator('setupPlugins', {
-                //     userId:    'bill',
-                //     userName:  'Bill',
-                //     accountId: '123',
-                //     authToken: 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJjb25zdW1lcktleSI6ImYzNGMxZWJlYzAzNDQ4NGM5NTBlMWRmY2JjODcxZGEyIiwidXNlcklkIjoxMjMsImlzc3VlZEF0IjoiMjAxNy0wMi0xMlQxNDoyMjozNVoiLCJ0dGwiOjg2NDAwODY0MDAwfQ.vDKdv7yb7y_ZoHMGqNHqfXzrlNUvfWiGhVQ7UshaNuM'
-                //   });
                  .annotator('addPlugin', 'Auth', {
-                  tokenUrl: 'http://annotateit.org/api/token'
-                 })
+                    // userId:    'bill',
+                    // userName:  'Bill',
+                    // accountId: '123',
+                    token: 'eyJhbGciOiAiSFMyNTYiLCAidHlwIjogIkpXVCJ9.eyJ1c2VySWQiOiAia2VlbGV5IiwgInR0bCI6IDg2NDAwLCAiY29uc3VtZXJLZXkiOiAiYW5ub3RhdGVpdCIsICJpc3N1ZWRBdCI6ICIyMDE3LTAyLTEyVDE3OjEyOjIxKzAwOjAwIn0.rSYAqopfeci7TFy7zEJirzZFPW76rBBAPgcrWTwwn0k',
+                    autoFetch: false
+                  })
+                //  .annotator('addPlugin', 'Auth', {
+                //   tokenUrl: 'http://annotateit.org/api/token'
+                //  })
                  .annotator('addPlugin', 'Store', {
                   prefix: 'http://annotateit.org/api',
                   loadFromSearch: {
