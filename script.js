@@ -4,12 +4,8 @@ jQuery(function ($) {
           "Either download a tagged release from GitHub, or modify the Cakefile to point " +
           "at your copy of the YUI compressor and run `cake package`.");
   } else {
-    // This is the important bit: how to create the annotator and add
-    // plugins
     $('#content').annotator()
-                 .annotator('addPlugin', 'Permissions')
                  .annotator('addPlugin', 'Markdown')
-                 .annotator('addPlugin', 'Tags')
                  .annotator('addPlugin', 'Auth', {
                   tokenUrl: 'http://annotateit.org/api/token'
                  })
@@ -22,7 +18,5 @@ jQuery(function ($) {
                     update: '/annotations/:id'
                   }
                  });
-
-    $('#content').data('annotator').plugins['Permissions'].setUser("Joe Bloggs");
   }
 });
