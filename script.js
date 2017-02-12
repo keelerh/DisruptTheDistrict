@@ -5,20 +5,16 @@ jQuery(function ($) {
           "at your copy of the YUI compressor and run `cake package`.");
   } else {
     $('#content').annotator()
-                 .annotator('setupPlugins', {
-                    userId:    'bill',
-                    userName:  'Bill',
-                    accountId: '123',
-                    authToken: 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJjb25zdW1lcktleSI6ImYzNGMxZWJlYzAzNDQ4NGM5NTBlMWRmY2JjODcxZGEyIiwidXNlcklkIjoxMjMsImlzc3VlZEF0IjoiMjAxNy0wMi0xMlQxNDoyMjozNVoiLCJ0dGwiOjg2NDAwODY0MDAwfQ.vDKdv7yb7y_ZoHMGqNHqfXzrlNUvfWiGhVQ7UshaNuM'
-                  })
+                //  .annotator('setupPlugins', {
+                //     userId:    'bill',
+                //     userName:  'Bill',
+                //     accountId: '123',
+                //     authToken: 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJjb25zdW1lcktleSI6ImYzNGMxZWJlYzAzNDQ4NGM5NTBlMWRmY2JjODcxZGEyIiwidXNlcklkIjoxMjMsImlzc3VlZEF0IjoiMjAxNy0wMi0xMlQxNDoyMjozNVoiLCJ0dGwiOjg2NDAwODY0MDAwfQ.vDKdv7yb7y_ZoHMGqNHqfXzrlNUvfWiGhVQ7UshaNuM'
+                //   });
+                  $('#content').annotator()
                  .annotator('addPlugin', 'Auth', {
                   tokenUrl: 'http://annotateit.org/api/token'
                  })
-                 .annotator('addPlugin', 'Categories',{
-                           errata:'annotator-hl-errata',
-                           destacat:'annotator-hl-destacat',
-                           subratllat:'annotator-hl-subratllat'
-                  })
                  .annotator('addPlugin', 'Store', {
                   prefix: 'http://annotateit.org/api',
                   loadFromSearch: {
