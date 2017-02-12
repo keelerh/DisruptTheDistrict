@@ -26,7 +26,7 @@ function addClickBaitButton()
       clickbait=document.createElement('a');
       clickbait.className='clickbait';
       clickbait.innerHTML='<strong>Factify</strong>';
-      clickbait.href='http://s3.amazonaws.com/aws-website-sourcr-irqxd/index.html';
+      clickbait.href='http://s3.amazonaws.com/aws-website-sourcr-irqxd/page2.html';
       clickbait.addEventListener('click',function(){linkOut(this);})
       postbuttons.appendChild(clickbait);
   }
