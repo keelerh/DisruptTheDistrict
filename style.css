@@ -31,14 +31,15 @@ header {
     display: inline-flex;
     align-items: center;
     justify-content: space-between;
+    width: 100%;
 }
 
 .header-bottom > p {
-  padding: 20px;
+  padding: 15px;
   color: white;
   font-size: 16px;
   width: 60%;
-
+  line-height: 20px;
 }
 
 nav {
@@ -107,7 +108,7 @@ main {
 }
 
 .article {
-  width: 600px;
+  width: 100%;
   margin-bottom: 20px;
   background: white;
   border: 3px;
@@ -166,9 +167,9 @@ a {
 }
 
 .fa-thumbs-up {
-  color: green;
+  color: rgb(105, 188, 152;
 }
 
 .fa-thumbs-down {
-  color: red;
+  color: #ff8080;
 }
