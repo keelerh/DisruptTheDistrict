@@ -925,7 +925,7 @@
       this.editor = new Annotator.Editor();
       this.editor.hide().on('hide', this.onEditorHide).on('save', this.onEditorSubmit).addField({
         type: 'textarea',
-        label: _t('Comments') + '\u2026',
+        label: _t('Found fiction? Prove it wrong') + '\u2026',
         load: function(field, annotation) {
           return $(field).find('textarea').val(annotation.text || '');
         },
