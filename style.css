@@ -1,22 +1,22 @@
 body {
   margin: 0 auto;
-  /*background-color: lightgray;*/
-  /*display: flex;
-  flex-direction: column;
-  align-items: center;*/
 }
 
 header {
-  font-family: 'Acme', sans-serif;
+  font-family: 'Pathway Gothic One', sans-serif;
   height: 150px;
   /*color: gray;*/
   background: rgb(192, 206, 214);
   display: flex;
   align-items: center;
-  justify-content: center;
+  /*justify-content: center;*/
   width: 100%;
   /*margin-left: 200px;*/
-  font-size: 50px;
+  font-size: 60px;
+}
+
+h1 {
+  margin-left: 50px;
 }
 
 main {
@@ -25,9 +25,13 @@ main {
   align-items: center;
 }
 
+iframe {
+  margin-left: -30px;
+}
+
 .thumbnail iframe {
   width: 700px;
-  height: 250px;
+  height: 259px;
   padding-bottom: 20px;
   /*background-color: rgba(255, 255, 255, 0.3);*/
 }
@@ -61,11 +65,11 @@ main {
 }
 
 .thumbnail:hover {
-    -webkit-transform:scale(1.05); /* Safari and Chrome */
-    -moz-transform:scale(1.05); /* Firefox */
-    -ms-transform:scale(1.05); /* IE 9 */
-    -o-transform:scale(1.05); /* Opera */
-     transform:scale(1.05);
+    -webkit-transform:scale(1.03); /* Safari and Chrome */
+    -moz-transform:scale(1.03); /* Firefox */
+    -ms-transform:scale(1.03); /* IE 9 */
+    -o-transform:scale(1.03); /* Opera */
+     transform:scale(1.03);
 }
 
 /*.container {
@@ -75,9 +79,9 @@ main {
 
 span {
   float: right;
-  background: lightgray;
+  background: rgba(0,0,0,0.05);
   width: 100%;
-  font-size: 22px;
+  font-size: 20px;
   color: navy;
   padding: 5px;
   border: 5px;
