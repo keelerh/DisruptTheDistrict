@@ -26,7 +26,7 @@ function addClickBaitButton()
       clickbait=document.createElement('a');
       clickbait.className='clickbait';
       clickbait.innerHTML='<strong>Factify</strong>';
-      clickbait.href='https://keelerh.github.io/DisruptTheDistrict/page2.html';
+      clickbait.href='http://s3.amazonaws.com/aws-website-sourcr-irqxd/index.html';
       clickbait.addEventListener('click',function(){linkOut(this);})
       postbuttons.appendChild(clickbait);
   }
