@@ -27,7 +27,7 @@ header {
 }
 
 .header-bottom {
-    background: gray;
+    background: #B8B8B8;
     display: inline-flex;
     align-items: center;
     justify-content: space-between;
