@@ -4,8 +4,37 @@
     <link rel="stylesheet" href="article.css">
     <meta charset="utf-8">
     <title></title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="lib/vendor/jquery.js"></script>
+
+    <!-- The main Annotator script -->
+    <script src="pkg/annotator.min.js"></script>
+
+    <!-- Annotator's styling and images -->
+    <link rel="stylesheet" type="text/css" href="pkg/annotator.min.css">
+
+    <!-- The Store plugin. Saves annotations to a remote backend -->
+    <script src="pkg/annotator.store.min.js"></script>
+
+    <!-- The Auth plugin. Allows users of Annotator to authenticate themselves
+         to the remote backend -->
+    <script src="pkg/annotator.auth.min.js"></script>
+
+    <!-- The Permissions plugin. See who created which annotation and create
+         annotations as a specified user -->
+    <script src="pkg/annotator.permissions.min.js"></script>
+
+    <!-- The Tags plugin. Edit and display tag keywords on annotations -->
+    <script src="pkg/annotator.tags.min.js"></script>
+
+    <!-- The Markdown plugin. Treat annotation text as Markdown -->
+    <script src="lib/vendor/showdown.js"></script>
+    <script src="pkg/annotator.markdown.min.js"></script>
+
   </head>
+
   <body>
+    <div id="content">
     <h1>Former A.I.G. Executives Reach Settlement in Accounting Fraud Case</h1>
     <h2>By RANDALL SMITHFEB. 10, 2017</h2>
     <p>
@@ -90,5 +119,9 @@
 
     A version of this article appears in print on February 11, 2017, on Page B1 of the New York edition with the headline: Two Ex-Executives Settle A.I.G. Fraud Case. Order Reprints| Today's Paper|Subscribe
   </p>
+  </div>
+
+  <script type="text/javascript" src="script.js"></script>
+
   </body>
 </html>

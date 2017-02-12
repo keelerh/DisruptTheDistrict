@@ -1,19 +1,48 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <link rel="stylesheet" href="reset.css">
     <link href="https://fonts.googleapis.com/css?family=Acme" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <!-- <script src="//cdn.jsdelivr.net/medium-editor/latest/js/medium-editor.min.js"></script>
-    <link rel="stylesheet" href="//cdn.jsdelivr.net/medium-editor/latest/css/medium-editor.min.css" type="text/css" media="screen" charset="utf-8"> -->
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="lib/vendor/jquery.js"></script>
+    <script src="lib/vendor/json2.js"></script>
+
     <meta charset="utf-8">
     <title>Disrupt the District</title>
+
+    <!-- The main Annotator script -->
+    <script src="pkg/annotator.min.js"></script>
+
+    <!-- Annotator's styling and images -->
+    <link rel="stylesheet" type="text/css" href="pkg/annotator.min.css">
+
+    <!-- The Store plugin. Saves annotations to a remote backend -->
+    <script src="pkg/annotator.store.min.js"></script>
+
+    <!-- The Auth plugin. Allows users of Annotator to authenticate themselves
+         to the remote backend -->
+    <script src="pkg/annotator.auth.min.js"></script>
+
+    <!-- The Permissions plugin. See who created which annotation and create
+         annotations as a specified user -->
+    <script src="pkg/annotator.permissions.min.js"></script>
+
+    <!-- The Tags plugin. Edit and display tag keywords on annotations -->
+    <script src="pkg/annotator.tags.min.js"></script>
+
+    <!-- The Markdown plugin. Treat annotation text as Markdown -->
+    <script src="lib/vendor/showdown.js"></script>
+    <script src="pkg/annotator.markdown.min.js"></script>
+
   </head>
+
   <body>
     <header>
       <h1>Verify This</h1>
     </header>
+
     <main>
       <!-- <div class="thumbnail-container"> -->
         <div class="container">
@@ -33,6 +62,38 @@
         </div>
       <!-- </div> -->
     </main>
-  <script type="text/javascript" src="script.js"></script>
+    <script type="text/javascript" src="script.js"></script>
+
+    <!-- <script>
+      jQuery(function ($) {
+        if (typeof $.fn.annotator !== 'function') {
+          alert("Ooops! it looks like you haven't built the Annotator concatenation file. " +
+                "Either download a tagged release from GitHub, or modify the Cakefile to point " +
+                "at your copy of the YUI compressor and run `cake package`.");
+        } else {
+          // This is the important bit: how to create the annotator and add
+          // plugins
+          $('#airlock').annotator()
+                       .annotator('addPlugin', 'Permissions')
+                       .annotator('addPlugin', 'Markdown')
+                       .annotator('addPlugin', 'Tags')
+                       .annotator('addPlugin', 'Auth', {
+                        tokenUrl: 'http://annotateit.org/api/token'
+                       })
+                       .annotator('addPlugin', 'Store', {
+                        prefix: 'http://annotateit.org/api',
+                        loadFromSearch: {
+                          'limit': 20,
+                        },
+                        urls: {
+                          update: '/annotations/:id'
+                        }
+                       });
+
+          $('#airlock').data('annotator').plugins['Permissions'].setUser("Joe Bloggs");
+        }
+      });
+    </script> -->
   </body>
+
 </html>

@@ -1,20 +1,28 @@
-$(function(){
+jQuery(function ($) {
+  if (typeof $.fn.annotator !== 'function') {
+    alert("Ooops! it looks like you haven't built the Annotator concatenation file. " +
+          "Either download a tagged release from GitHub, or modify the Cakefile to point " +
+          "at your copy of the YUI compressor and run `cake package`.");
+  } else {
+    // This is the important bit: how to create the annotator and add
+    // plugins
+    $('#content').annotator()
+                 .annotator('addPlugin', 'Permissions')
+                 .annotator('addPlugin', 'Markdown')
+                 .annotator('addPlugin', 'Tags')
+                 .annotator('addPlugin', 'Auth', {
+                  tokenUrl: 'http://annotateit.org/api/token'
+                 })
+                 .annotator('addPlugin', 'Store', {
+                  prefix: 'http://annotateit.org/api',
+                  loadFromSearch: {
+                    'limit': 20,
+                  },
+                  urls: {
+                    update: '/annotations/:id'
+                  }
+                 });
 
-  var annotation = $('#content').annotator();
-
-  annotation.annotator('addPlugin', 'Store', {
-    prefix: '/annotation',
-    loadFromSearch : {
-        page : current_page_id
-    },
-    annotationData : {
-        page : current_page_id
-    },
-    urls: {
-        create:  '/store',
-        update:  '/update/:id',
-        destroy: '/delete/:id',
-        search:  '/search'
-    }
-  });
+    $('#content').data('annotator').plugins['Permissions'].setUser("Joe Bloggs");
+  }
 });
