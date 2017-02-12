@@ -458,6 +458,8 @@
 .annotator-filter .annotator-filter-property label {
 	position: relative;
 	display: inline-block;
+	height: 20px;
+	width: 0px;
 	padding: 0 6px 0 22px;
 	color: rgb(54, 54, 54);
 	text-shadow: 0 1px 0 rgba(255, 255, 255, 0.75);
@@ -465,7 +467,7 @@
 	line-height: 24px;
 	font-size: 12px;
 	font-weight: bold;
-	border: 1px solid rgb(162, 162, 162);
+	border: 0px solid rgb(162, 162, 162);
 	background-color: rgb(212, 212, 212);
 	background-image: -webkit-gradient(
 		linear, left top, left bottom,
@@ -532,6 +534,7 @@
 .annotator-filter .annotator-filter-active label,
 .annotator-filter .annotator-filter-navigation button:hover {
 	outline: none;
+	height: 20px;
 	border-color: rgb(67, 90, 160);
 	background-color: rgb(56, 101, 249);
 	background-image: -webkit-gradient(
