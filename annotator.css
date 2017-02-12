@@ -40,6 +40,7 @@
 	background-repeat: no-repeat;
 }
 
+
 /* Annotator Highlight
 -------------------------------------------------------------------- */
 
@@ -636,9 +637,9 @@
 .annotator-resize {
 	position: absolute;
 	top: 0;
-	right: 0;
-	width: 12px;
-	height: 12px;
+	right: 2px;
+	width: 7px;
+	height: 7px;
 	background-position: 2px -150px;
 }
 
