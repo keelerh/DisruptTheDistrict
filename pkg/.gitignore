@@ -1,5 +1,4 @@
 *.coffee
-*.js
 *.css
 *.map
 _tmp
