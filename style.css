@@ -7,13 +7,12 @@ header {
   font-family: 'Pathway Gothic One', sans-serif;
   height: 120px;
   color: white;
-  background: rgb(138, 216, 184);
+  background: rgb(105, 188, 152);
   display: flex;
   align-items: center;
-  /*justify-content: center;*/
   width: 100%;
-  /*margin-left: 200px;*/
   font-size: 70px;
+  /*border-bottom: 4px solid gray;*/
 }
 
 h1 {
@@ -35,14 +34,13 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 70%;
+  width: 600px;
   margin: 0 auto;
 }
 
 .article {
-  height: 320px;
   width: 100%;
-  margin-top: 20px;
+  margin-top: 30px;
   background: white;
   border: 3px;
   border-radius: 4px;
@@ -74,11 +72,11 @@ main {
 
 .article-footer {
   /*float: right;*/
-  height: 50px;
+  height: 20px;
   border-top: 3px solid gray;
   font-size: 20px;
-  padding: 10px 20px;
-  color: green;
+  padding: 20px;
+  color: rgb(105, 188, 152);
 }
 
 .article-footer > p {

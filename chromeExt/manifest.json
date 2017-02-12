@@ -1,0 +1,32 @@
+{
+  "manifest_version": 2,
+
+  "name": "Clickbait Saver",
+  "description": "This extension saves the users from facebook clickbaits by getting the content of the clickbait and posting it as a comment.",
+  "version": "1.0",
+
+  "browser_action": {
+    "default_icon": "/images/16.png"
+  },
+  "background": {
+    "scripts": ["jquery.min.js","background.js"]
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://www.facebook.com/*"],
+      "js": ["jquery.min.js","main.js"]
+    }
+  ],
+  "icons": { "16": "/images/16.png",
+           "48": "/images/64.png",
+          "128": "/images/128.png" },
+  "permissions": [
+    "tabs",
+    "activeTab",
+    "clipboardRead",
+    "clipboardWrite",
+    "http://*/",
+    "https://*/",
+    "https://ajax.googleapis.com/"
+  ]
+}
