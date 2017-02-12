@@ -75,8 +75,14 @@ header p {
   padding-right: 30px;
 }
 
+.header-top div {
+  display: flex;
+  align-items: center;
+}
+
 h1 {
-  margin-left: 30px;
+  margin-left: 0px;
+  display: inline-block;
 }
 
 h2 {
