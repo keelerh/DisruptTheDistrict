@@ -44,6 +44,7 @@ header {
 
 nav {
   padding: 10px;
+  font-family: 'Pathway Gothic One', sans-serif;
 }
 
 header a {
@@ -57,7 +58,6 @@ header a {
 header a:hover {
   color: white;
 }
-
 
 footer {
   height: 80px;
@@ -125,6 +125,16 @@ main {
   -ms-transform: scale(1.02);
   -o-transform: scale(1.02);
   transform: scale(1.02);
+}
+
+input {
+  padding: 8px;
+  font-size: 16px;
+}
+
+button {
+  padding: 10px;
+  font-size: 18px;
 }
 
 .article {
