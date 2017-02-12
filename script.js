@@ -5,7 +5,6 @@ jQuery(function ($) {
           "at your copy of the YUI compressor and run `cake package`.");
   } else {
     $('#content').annotator()
-                 .annotator('addPlugin', 'Markdown')
                  .annotator('addPlugin', 'Auth', {
                   tokenUrl: 'http://annotateit.org/api/token'
                  })
