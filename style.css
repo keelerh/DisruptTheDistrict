@@ -1,62 +1,66 @@
 body {
   margin: 0 auto;
+  background: lightgray;
 }
 
 header {
   font-family: 'Pathway Gothic One', sans-serif;
-  height: 150px;
-  /*color: gray;*/
-  background: rgb(192, 206, 214);
+  height: 120px;
+  color: white;
+  background: rgb(138, 216, 184);
   display: flex;
   align-items: center;
   /*justify-content: center;*/
   width: 100%;
   /*margin-left: 200px;*/
-  font-size: 60px;
+  font-size: 70px;
 }
 
 h1 {
   margin-left: 50px;
 }
 
+h2 {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 5px;
+}
+
+h3 {
+  font-size: 14px;
+  margin-left: 5px;
+}
+
 main {
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 70%;
+  margin: 0 auto;
 }
 
-iframe {
-  margin-left: -30px;
+.article {
+  height: 320px;
+  width: 100%;
+  margin-top: 20px;
+  background: white;
+  border: 3px;
+  border-radius: 4px;
+  box-shadow: 3px 3px 3px #888888;
+  color: black;
+  display: flex;
+  flex-direction: column;
 }
 
-.thumbnail iframe {
-  width: 700px;
-  height: 259px;
-  padding-bottom: 20px;
-  /*background-color: rgba(255, 255, 255, 0.3);*/
+.article:hover {
+  -webkit-transform: scale(1.02);
+  -moz-transform: scale(1.02);
+  -ms-transform: scale(1.02);
+  -o-transform: scale(1.02);
+  transform: scale(1.02);
 }
 
-.thumbnail:after {
-  content: "";
-  display: block;
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-}
-
-.thumbnail {
-  -ms-zoom: 1;
-  -moz-transform: scale(1);
-  -moz-transform-origin: 0 0;
-  -o-transform: scale(1);
-  -o-transform-origin: 0 0;
-  -webkit-transform: scale(1);
-  -webkit-transform-origin: 0 0;
-}
-
-.thumbnail {
+.article {
     -webkit-transition: all 0.5s ease; /* Safari and Chrome */
     -moz-transition: all 0.5s ease; /* Firefox */
     -ms-transition: all 0.5s ease; /* IE 9 */
@@ -64,30 +68,29 @@ iframe {
     transition: all 0.5s ease;
 }
 
-.thumbnail:hover {
-    -webkit-transform:scale(1.03); /* Safari and Chrome */
-    -moz-transform:scale(1.03); /* Firefox */
-    -ms-transform:scale(1.03); /* IE 9 */
-    -o-transform:scale(1.03); /* Opera */
-     transform:scale(1.03);
+.article-main {
+  padding: 20px;
 }
 
-/*.container {
-  border: 2px solid gray;
-  margin-top: 20px;
-}*/
-
-span {
-  float: right;
-  background: rgba(0,0,0,0.05);
-  width: 100%;
+.article-footer {
+  /*float: right;*/
+  height: 50px;
+  border-top: 3px solid gray;
   font-size: 20px;
-  color: navy;
-  padding: 5px;
-  border: 5px;
-  border-radius: 4px;
+  padding: 10px 20px;
+  color: green;
 }
 
-span > p {
-  float: right;
+.article-footer > p {
+  display: inline;
+  margin-left: 5px;
+}
+
+img {
+  height: 170px;
+  margin-bottom: 10px;
+}
+
+a {
+  text-decoration: none;
 }
