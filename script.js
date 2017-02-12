@@ -10,7 +10,7 @@ jQuery(function ($) {
                     userName:  'Bill',
                     accountId: '123',
                     authToken: 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJjb25zdW1lcktleSI6ImYzNGMxZWJlYzAzNDQ4NGM5NTBlMWRmY2JjODcxZGEyIiwidXNlcklkIjoxMjMsImlzc3VlZEF0IjoiMjAxNy0wMi0xMlQxNDoyMjozNVoiLCJ0dGwiOjg2NDAwODY0MDAwfQ.vDKdv7yb7y_ZoHMGqNHqfXzrlNUvfWiGhVQ7UshaNuM'
-                  });
+                  })
                  .annotator('addPlugin', 'Auth', {
                   tokenUrl: 'http://annotateit.org/api/token'
                  })
