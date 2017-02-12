@@ -4,20 +4,79 @@ body {
   padding-bottom: 5%;
 }
 
+.content {
+  display: flex;
+}
+
 header {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.header-top {
   font-family: 'Pathway Gothic One', sans-serif;
   height: 120px;
   color: white;
   background: rgb(105, 188, 152);
   display: flex;
   align-items: center;
-  width: 100%;
+  justify-content: space-between;
   font-size: 70px;
+  /*padding: 20px;*/
   /*border-bottom: 4px solid gray;*/
 }
 
+.header-bottom {
+    background: gray;
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-bottom > p {
+  padding: 20px;
+  color: white;
+  font-size: 16px;
+  width: 60%;
+
+}
+
+nav {
+  padding: 10px;
+}
+
+header a {
+  /*display: inline;*/
+  /*width: 60%;*/
+  color: black;
+  margin-right: 20px;
+  font-size: 22px;
+}
+
+header a:hover {
+  color: white;
+}
+
+
+footer {
+  height: 80px;
+  color: white;
+  background: rgb(105, 188, 152);
+  /*margin-top: 40px;*/
+}
+
+header img {
+  height: 100%;
+  margin-left: 30px;
+}
+
+header p {
+  font-size: 24px;
+  padding-right: 30px;
+}
+
 h1 {
-  margin-left: 50px;
+  margin-left: 30px;
 }
 
 h2 {
@@ -37,11 +96,13 @@ main {
   align-items: center;
   width: 60%;
   margin: 0 auto;
+  justify-content: space-around;
+  padding: 20px;
 }
 
 .article {
-  width: 100%;
-  margin-top: 30px;
+  width: 600px;
+  margin-bottom: 20px;
   background: white;
   border: 3px;
   border-radius: 4px;
@@ -76,7 +137,6 @@ main {
 }
 
 .article-footer {
-  /*float: right;*/
   height: 20px;
   border-top: 1px solid #e2e2e2;
   font-size: 20px;
@@ -87,13 +147,22 @@ main {
 .article-footer > p {
   display: inline;
   margin-left: 5px;
+  color: black;
 }
 
-img {
+.article img {
   height: 170px;
   margin-bottom: 10px;
 }
 
 a {
   text-decoration: none;
+}
+
+.fa-thumbs-up {
+  color: green;
+}
+
+.fa-thumbs-down {
+  color: red;
 }
